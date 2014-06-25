@@ -22,5 +22,9 @@ module Rubykassa
     def success
       "OK#{@invoice_id}"
     end
+    
+    def failed
+      "FAIL#{@invoice_id}"
+    end
   end
 end
