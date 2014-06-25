@@ -1,5 +1,6 @@
 # -*- encoding : utf-8 -*-
 class RobokassaController < ApplicationController
+  skip_before_filter :verify_authenticity_token
   before_filter :create_notification, except: :fail
 
   def paid
