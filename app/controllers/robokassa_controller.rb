@@ -26,6 +26,6 @@ class RobokassaController < ApplicationController
   private
 
     def create_notification
-      @notification = Rubykassa::Notification.new request.query_parameters
+      @notification = Rubykassa::Notification.new params
     end
 end
